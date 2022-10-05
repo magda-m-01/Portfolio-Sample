@@ -386,6 +386,10 @@
                 border-color: $primary-color;
             }
 
+            .captcha {
+                grid-column: 1 / span 2;
+            }
+
             button {
                 width: 50%;
                 margin: 0;

@@ -489,6 +489,9 @@ img {
   outline: none;
   border-color: #4C5072;
 }
+#contact-main #contact-a .text-fields .captcha {
+  grid-column: 1/span 2;
+}
 #contact-main #contact-a .text-fields button {
   width: 50%;
   margin: 0;
@@ -568,6 +571,9 @@ img {
   #contact-main #contact-a .text-fields textarea {
     grid-column: 1;
     grid-row: 5/span 9;
+  }
+  #contact-main #contact-a .text-fields .captcha {
+    grid-column: 1;
   }
   #footer.flex-container {
     flex-direction: column-reverse;
