@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/7b562c74a2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <title>Contact Me | UI/UX Designer & Photographer</title>
+</head>
+<body>
+    <header id="header-inner">
+        <div id="main-nav" class="flex-container">
+            <a href="index.html"><img src="img/logo.png" alt=""></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="work.html">work</a></li>
+                    <li class="current"><a href="contact.html">contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="contact-main">
+        <section id="contact-a">
+            <div class="section-title">
+                <h2>Contact Me</h2>
+                <div class="bottom-line"></div>
+                <p>Here is how you can reach me</p>
+            </div>
+            <form method="POST" data-netlify="true" data-netlify-recaptcha="true">
+                <div class="text-fields">
+                    <input type="text" class="text-input name-input" placeholder="Name" name="name">
+                    <input type="text" class="text-input subject-input" placeholder="Subject" name="subject">
+                    <input type="email" class="text-input email-input" placeholder="Email" name="email">
+                    <input type="text" class="text-input phone-input" placeholder="Phone Number" name="phone">
+                    <textarea name="text-input message-input" placeholder="Enter Message" name="message"></textarea>
+                    <div class="captcha" data-netlify-recaptcha="true"></div>
+                    <button type="submit" class="btn btn-dark">Submit</button>
+                </div>
+            </form>
+        </section>
+
+        <section id="contact-b">
+            <div class="contact-info flex-container">
+                <div class="info">
+                    <i class="fa-solid fa-envelope fa-2x"></i>
+                    <h2>email</h2>
+                    <p>john.doe@email.com</p>
+                </div>
+                <div class="info">
+                    <i class="fa-solid fa-phone fa-2x"></i>
+                    <h2>phone</h2>
+                    <p>111 222 333</p>
+                </div>
+                <div class="info">
+                    <i class="fa-solid fa-location-dot fa-2x"></i>
+                    <h2>address</h2>
+                    <p>50 Main st., Boston MA</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact-c">
+            <h2>Let's Start Your New Project</h2>
+        </section>
+    </main>
+
+    <footer id="footer" class="flex-container">
+        <p>Copyright &copy; 2018, All Rights Reserved</p>
+        <ul id="social" class="flex-container">
+            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+        </ul>
+    </footer>
+</body>
+</html>

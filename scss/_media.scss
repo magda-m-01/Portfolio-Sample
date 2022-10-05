@@ -1,0 +1,202 @@
+@media(max-width: 900px) {
+    #home-main {
+        #home-a {
+            .flex-container {
+                flex-direction: column;
+            }
+        }
+
+        #home-b {
+            &.flex-container {
+                flex-direction: column;
+            }
+        }
+
+        #home-c {
+            .flex-container {
+                flex-direction: column;
+            }
+        }
+    }
+
+    #about-main {
+        #about-c {
+            img {
+                padding: 1rem;
+            }
+        }
+
+        #about-d {
+            grid-template-areas: 
+            'testimonials testimonials'
+            't-1 t-2'
+            't-3 t-4';
+        }
+    }
+
+    #work-a {
+        .items {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    #contact-main {
+        #contact-a {
+            .text-fields {
+                grid-template-columns: repeat(1, 1fr);
+
+                textarea {
+                    grid-column: 1;
+                    grid-row: 5 / span 9;
+                }
+            }
+        }
+    }
+
+    #footer {
+        &.flex-container {
+            flex-direction: column-reverse;
+            gap: 1rem;
+            padding-top: 1.5rem;
+        }
+    }
+}
+
+@media(max-width: 600px) {
+    #header {
+        &-home {
+            padding: 0;
+            justify-content: center;
+            align-items: center;
+
+            #main-nav {
+                height: 200px;
+                width: 100vw;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background: $dark-color;
+
+                a img {
+                    height: 4rem;
+                }
+
+                nav ul {
+                    flex-direction: column;
+                    
+                    li {
+                        padding: 0.2rem;
+                        width: 100vw;
+
+                        &:hover,
+                        &.current {
+                            background: $medium-color;
+                            color: $dark-color;
+                            & a {
+                                border-bottom: none;
+                            }
+                        }
+                    }
+                }
+            }
+
+            #main-showcase {
+                padding: 0 3rem;
+
+                h1 {
+                    font-size: 2rem;
+
+                    span {
+                        display: block;
+                    }
+                }
+    
+                p {
+                    font-size: 0.8rem;
+                }
+            }
+        }
+
+        &-inner {
+            padding: 0;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            border-bottom: none;
+
+            #main-nav {
+                height: 100%;
+                width: 100vw;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background: $dark-color;
+
+                a img {
+                    height: 4rem;
+                }
+
+                nav ul {
+                    flex-direction: column;
+                    
+                    li {
+                        padding: 0.2rem;
+                        width: 100vw;
+
+                        &:hover,
+                        &.current {
+                            background: $medium-color;
+                            color: $dark-color;
+                            & a {
+                                border-bottom: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #about-main {
+        #about-a {
+            grid-template-areas: 
+            'about-me'
+            'image'
+            'description'
+            'award-1'
+            'award-2'
+            'award-3';
+        }
+
+        #about-c {
+            flex-direction: column;
+            
+            img {
+                padding: 3rem;
+            }
+        }
+
+        #about-d {
+            grid-template-areas: 
+            'testimonials'
+            't-1'
+            't-2'
+            't-3'
+            't-4';
+        }
+    }
+
+    #work-a {
+        .items {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    #contact-main {
+        #contact-b {
+            .contact-info {
+                flex-direction: column;
+            }
+        }
+    }
+}

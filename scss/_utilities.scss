@@ -1,0 +1,40 @@
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.flex-item {
+    flex-direction: column;
+    flex: 1;
+    padding: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    border: 1px solid;
+    padding: 0.6rem 1rem;
+    margin-top: 2rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    color: $white;
+
+    &:hover {
+        background: $primary-color-light;
+        color: $white;
+    }
+
+    &-dark {
+        background: $dark-color;
+        color: $light-color;
+    }
+}
+
+.bottom-line {
+    height: 1px;
+    width: 6rem;
+    background: $primary-color;
+    display: block;
+    margin: 0 auto 1rem auto;
+}
